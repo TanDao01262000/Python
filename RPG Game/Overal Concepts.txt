@@ -1,0 +1,9 @@
+* Begin with a normal character - with just hand 
+* Choosing the particular story for the each class to get the weapons: long swords, magic books, bows and arrows, axes, ... 
+* Multiple sorts of characters: knight, sorcerer, archer, warrior, ....
+* Unique skill for each class beside the normal movements: jump, bow down, sprint, move left, right, up, and down.
+* Dungeons: where to get special weapons, no need a such power to defeat the boss, need more work on brain
+* No level system 
+* Each class has a different story and way to get or enhance skills
+* The main story is still the same  
+

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Kin_Objects/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sta_Object/Tree.tscn" type="PackedScene" id=2]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=1]
+
+[node name="Game_Level" type="YSort"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 255, 231.75 )
+scale = Vector2( 1.02503, 1.00395 )
+collision_layer = 2
+collision_mask = 13
+
+[node name="AnimationTree" parent="Player" index="3"]
+parameters/playback = SubResource( 1 )
+
+[node name="Tree" parent="." instance=ExtResource( 2 )]
+position = Vector2( 488, 304 )
+collision_mask = 0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 0, 0, 80, 0, 72.8263, 217.317, 48, 272, 80, 432, 0, 592, 272, 520, 464, 568, 712, 544, 1008, 576, 944, 336, 1016, 248, 952, 120, 1024, 0, 1016, 592, 456, 584, 0, 592 )
+
+[editable path="Player"]
